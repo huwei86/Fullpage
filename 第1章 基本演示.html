@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第1章 基本演示</title>
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
+	<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+	<style type="text/css">
+     .section{
+     	text-align: center;
+     	font-size: 50px;
+     	color:#fff;
+     }
+     body{
+     	background-color: black
+     }
+
+	</style>
+</head>
+<body>
+	<div id="ok">
+		<div class="section">竖向第一屏</div>
+		<div class="section">
+			<div class="slide">第二屏的横向第一屏</div>
+			<div class="slide">第二屏的横向第二屏</div>
+			<div class="slide">第二屏的横向第三屏</div>
+			<div class="slide">第二屏的横向第四屏</div>
+		</div>
+		<div class="section">竖向第三屏</div>
+		<div class="section">
+			<div class="slide">第四屏的第一屏</div>
+			<div class="slide">第四屏的第二屏</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+		$("#ok").fullpage({
+			sectionColor:["#f0f","#f00","#0f0","#00f"]
+		})	
+		})
+	</script>
+</body>
+</html>

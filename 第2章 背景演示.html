@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第2章 背景演示</title>
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
+	<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+	<style type="text/css">
+	.section1{
+		background: url(image/001.jpg) 50%
+	}
+	.section2{
+		background: url(image/002.jpg) 50%
+	}
+	.section3{
+		background: url(image/003.jpg) 50%
+	}
+	.section4{
+		background: url(image/004.jpg) 50%
+	}
+	</style>
+</head>
+<body>
+	<div id="ok">
+		<div class="section section1"></div>
+		<div class="section section2"></div>
+		<div class="section section3"></div>
+		<div class="section section4"></div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+	$("#ok").fullpage()
+	})
+	</script>
+	
+</body>
+</html>

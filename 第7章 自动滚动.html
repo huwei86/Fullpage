@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
+	<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+	<style type="text/css">
+	.section{
+        text-align: center;
+        font-size: 50px;
+        background: red
+		}
+	</style>
+</head>
+<body>
+	<div id="ok">
+		<div class="section">
+			<h3>1</h3>
+		</div>
+        <div class="section">
+			<h3>2</h3>
+		</div>
+		<div class="section">
+			<h1>3</h3>
+		</div>
+		<div class="section">
+			<h3>4屏</h3>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("#ok").fullpage({
+				sectionColor:["#f00","#f00","#f00","#f00"],
+				continuousVertical:true
+			});
+			setInterval(function(){
+				$.fn.fullpage.moveSectionUp()
+			}, 3000)
+		})
+	</script>
+</body>
+</html>
